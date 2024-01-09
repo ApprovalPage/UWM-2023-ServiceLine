@@ -1613,7 +1613,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_11.setTransform(-38,106);
 	this.instance_11._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(112).to({_off:false},0).to({x:126},7,cjs.Ease.quadOut).wait(33).to({x:116},0).to({x:-38},7,cjs.Ease.quadIn).to({_off:true},1).wait(105));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(112).to({_off:false},0).to({x:126},7,cjs.Ease.quadOut).wait(33).to({x:-38},7,cjs.Ease.quadIn).to({_off:true},1).wait(105));
 
 	// HEAD R2
 	this.instance_12 = new lib.HEADR2();
@@ -1634,7 +1634,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_14.setTransform(-198.85,114.15,1.32,1.32,0,0,0,0.1,0.1);
 	this.instance_14._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(1).to({_off:false},0).to({x:53.15},10,cjs.Ease.quadOut).wait(254));
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(1).to({_off:false},0).to({x:48.15},10,cjs.Ease.quadOut).wait(254));
 
 	// PIC
 	this.instance_15 = new lib.PIC1();
