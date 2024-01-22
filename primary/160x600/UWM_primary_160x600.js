@@ -1107,15 +1107,27 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// mask (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("EgggAHSIAAujMBBBAAAIAAOjg");
+	mask.setTransform(5.725,-17.025);
+
 	// Layer_4
 	this.instance = new lib.UW_Color_HighDegree_Logoai("synched",0);
 	this.instance.setTransform(-1,-0.65,1.05,1.05,0,0,0,159.2,55.5);
+
+	var maskedShapeInstanceList = [this.instance];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.UWMed_logomark, new cjs.Rectangle(-167,-46.2,333.5,104.2), null);
+}).prototype = getMCSymbolPrototype(lib.UWMed_logomark, new cjs.Rectangle(-167,-46.2,333.5,75.80000000000001), null);
 
 
 // stage content:
@@ -1166,9 +1178,9 @@ if (reversed == null) { reversed = false; }
 
 	// UWMed logo mark
 	this.instance = new lib.UWMed_logomark();
-	this.instance.setTransform(80.2,529.2,0.44,0.44,0,0,0,0.5,0.5);
+	this.instance.setTransform(80.2,531.2,0.44,0.44,0,0,0,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(208).to({x:80.25,y:547.25},13,cjs.Ease.quadInOut).wait(44));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(208).to({x:80.25,y:557.25},13,cjs.Ease.quadInOut).wait(44));
 
 	// SUB ServLine
 	this.instance_1 = new lib.SUBServLine();
