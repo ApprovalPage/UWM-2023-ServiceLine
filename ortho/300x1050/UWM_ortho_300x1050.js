@@ -1239,8 +1239,8 @@ if (reversed == null) { reversed = false; }
 
 	// pic divider
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("A3bAyIAAhjMAu3AAAIAABjg");
-	this.shape_1.setTransform(150,425);
+	this.shape_1.graphics.f("#FBCE34").s().p("EgXbAhkIAAhkMAu3AAAIAABkgA3b/+IAAhkMAu3AAAIAABkg");
+	this.shape_1.setTransform(150,215.25);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(265));
 
