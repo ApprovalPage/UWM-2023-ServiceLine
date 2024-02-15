@@ -1164,11 +1164,38 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(265));
 
+	// mask (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	var mask_graphics_0 = new cjs.Graphics().p("AqlCgIAAk/IVLAAIAAE/g");
+	var mask_graphics_208 = new cjs.Graphics().p("EgKiAqbIAAlAIVKAAIAAFAg");
+	var mask_graphics_209 = new cjs.Graphics().p("EgKiAqdIAAlAIVKAAIAAFAg");
+	var mask_graphics_210 = new cjs.Graphics().p("EgKiAqhIAAlAIVKAAIAAFAg");
+	var mask_graphics_211 = new cjs.Graphics().p("EgKiAqpIAAlAIVKAAIAAFAg");
+	var mask_graphics_212 = new cjs.Graphics().p("EgKiAq0IAAlAIVKAAIAAFAg");
+	var mask_graphics_213 = new cjs.Graphics().p("EgKiArBIAAlAIVKAAIAAFAg");
+	var mask_graphics_214 = new cjs.Graphics().p("EgKiArSIAAlAIVKAAIAAFAg");
+	var mask_graphics_215 = new cjs.Graphics().p("EgKiArmIAAlAIVKAAIAAFAg");
+	var mask_graphics_216 = new cjs.Graphics().p("EgKiAr3IAAlAIVKAAIAAFAg");
+	var mask_graphics_217 = new cjs.Graphics().p("EgKiAsEIAAlAIVKAAIAAFAg");
+	var mask_graphics_218 = new cjs.Graphics().p("EgKiAsPIAAlAIVKAAIAAFAg");
+	var mask_graphics_219 = new cjs.Graphics().p("EgKiAsXIAAlAIVKAAIAAFAg");
+	var mask_graphics_220 = new cjs.Graphics().p("EgKiAsbIAAlAIVKAAIAAFAg");
+	var mask_graphics_221 = new cjs.Graphics().p("EgKiAsdIAAlAIVKAAIAAFAg");
+
+	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:mask_graphics_0,x:68.275,y:527}).wait(208).to({graphics:mask_graphics_208,x:68.025,y:271.5}).wait(1).to({graphics:mask_graphics_209,x:68.025,y:271.6539}).wait(1).to({graphics:mask_graphics_210,x:68.025,y:272.1154}).wait(1).to({graphics:mask_graphics_211,x:68.025,y:272.8846}).wait(1).to({graphics:mask_graphics_212,x:68.025,y:273.9615}).wait(1).to({graphics:mask_graphics_213,x:68.025,y:275.3462}).wait(1).to({graphics:mask_graphics_214,x:68.025,y:277.0385}).wait(1).to({graphics:mask_graphics_215,x:68.025,y:278.9615}).wait(1).to({graphics:mask_graphics_216,x:68.025,y:280.6539}).wait(1).to({graphics:mask_graphics_217,x:68.025,y:282.0385}).wait(1).to({graphics:mask_graphics_218,x:68.025,y:283.1154}).wait(1).to({graphics:mask_graphics_219,x:68.025,y:283.8846}).wait(1).to({graphics:mask_graphics_220,x:68.025,y:284.3462}).wait(1).to({graphics:mask_graphics_221,x:68.025,y:284.5}).wait(44));
+
 	// UWMed logo mark
 	this.instance = new lib.UWMed_logomark();
 	this.instance.setTransform(60.15,534.9,0.3344,0.3344,0,0,0,0.6,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(208).to({x:60.2,y:554.7},13,cjs.Ease.quadInOut).wait(44));
+	var maskedShapeInstanceList = [this.instance];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(208).to({x:60.2,y:560.7},13,cjs.Ease.quadInOut).wait(44));
 
 	// SUB ServLine
 	this.instance_1 = new lib.SUBServLine();
