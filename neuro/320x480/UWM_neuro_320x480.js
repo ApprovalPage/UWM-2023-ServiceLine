@@ -1250,14 +1250,14 @@ if (reversed == null) { reversed = false; }
 
 	// PIC
 	this.instance_11 = new lib.PIC1();
-	this.instance_11.setTransform(159.95,0,1.0667,1.0667);
+	this.instance_11.setTransform(159.95,-30,1.0667,1.0667);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(265));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-246.9,239.5,800.6,400.5);
+p.nominalBounds = new cjs.Rectangle(-246.9,210,800.6,400);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',

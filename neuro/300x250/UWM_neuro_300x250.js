@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib._300x250neuro1 = function() {
+(lib._300x250neuro = function() {
 	this.initialize(ss["UWM_neuro_300x250_atlas_NP_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -460,7 +460,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib._300x250neuro1();
+	this.instance = new lib._300x250neuro();
 	this.instance.setTransform(-150,-125,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
