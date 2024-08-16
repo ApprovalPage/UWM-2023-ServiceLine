@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"UWM_primaryper3_120x600_atlas_NP_1", frames: [[0,0,320,1200]]}
+		{name:"UWM_primaryper3_120x600_atlas_NP_1", frames: [[0,0,240,1200]]}
 ];
 
 
@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib._160x600primaryper3 = function() {
+(lib._120x600primaryper3 = function() {
 	this.initialize(ss["UWM_primaryper3_120x600_atlas_NP_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -477,14 +477,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib._160x600primaryper3();
+	this.instance = new lib._120x600primaryper3();
 	this.instance.setTransform(-60,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.PIC1, new cjs.Rectangle(-60,0,160,600), null);
+}).prototype = getMCSymbolPrototype(lib.PIC1, new cjs.Rectangle(-60,0,120,600), null);
 
 
 (lib.HEAD2d = function(mode,startPosition,loop,reversed) {
@@ -1260,7 +1260,7 @@ if (reversed == null) { reversed = false; }
 
 	// PIC
 	this.instance_10 = new lib.PIC1();
-	this.instance_10.setTransform(50,0,0.8192,0.8192);
+	this.instance_10.setTransform(60.1,0,1,1,0,0,0,0.1,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(265));
 
